@@ -98,7 +98,6 @@ const DataTableComponent = () => {
 
     useEffect(() => {
         dispatch(getUserlistRequest());
-        toast.success('Get all successfully')
     }, [dispatch]);
 
     const handleSearchChange = (e) => {

@@ -26,8 +26,8 @@ const userReducer = (state = initialState, action) => {
             return {
                 ...state,
                 userList: [...state.userList, action.payload],
-                obj: action.payload,
                 loading: false,
+                obj: action.payload,
                 error: null,
             };
         case types.GET_USERLIST_SUCCESS:
@@ -57,6 +57,7 @@ const userReducer = (state = initialState, action) => {
                     )
                     : [],
                 loading: false,
+                obj: action.payload,
             };
         case types.USER_DELETE_SUCCESS:
             return {
