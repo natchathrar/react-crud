@@ -1,38 +1,67 @@
-.App {
-  text-align: center;
+.box8 label {
+  font-weight: 600;
+  color: #666;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* .box8 {
+  background: #ece9e9;
+} */
+/* .regformback
+{
+  background-image: url('https://png.pngtree.com/background/20210709/original/pngtree-blue-hospital-medical-western-medicine-poster-background-picture-image_954226.jpg');
+} */
+.box8 {
+  box-shadow: 0px 0px 5px 1px #999;
+  border-radius: 7px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.regformbtn {
+  background-color: rgb(92, 205, 205);
+  border: none;
+  color: aliceblue;
+  width: 10%;
+  padding: 10px;
+}
+
+.regformbtn:hover {
+  background-color: none;
+  color: aliceblue;
+}
+
+.regform {
+  font-size: 12px;
+  width: 80%;
+}
+
+.regform select,
+input[type="file"],
+input[type="date"] {
+  font-size: 12px;
+}
+
+@media (min-width:320px) {
+  .regform {
+    width: 100%;
+  }
+
+  .regformbtn {
+    background-color: rgb(92, 205, 205);
+    border: none;
+    /* width: 15%; */
+    padding: 10px;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.redcolor {
+  color: red;
+  font-size: 1.2em;
 }
 
-.App-link {
-  color: #61dafb;
+.header-line {
+  border-bottom: 1px solid rgba(0, 0, 0, .125);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.hr-line {
+  border-top: 1px solid rgba(0, 0, 0, .125);
+  padding: 0.75rem 1.25rem;
 }
